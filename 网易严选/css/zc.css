@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100%;
+	min-width: 1090px;
+	outline: 0;
+	font: 12px/1.5 "Microsoft Yahei", "微软雅黑", verdana;
+	background-color: #fff;
+	/* overflow: hidden; */
+}
+#header .danghang1_li1 a {
+    color: black;
+    border-bottom: none;
+}
+.slick {
+	height: 420px;
+	overflow: hidden;
+}
+/* lunbo */
+.swiper-container {
+    width: 100%;
+    height: 420px;
+    --swiper-navigation-size: 20px; /* 设置按钮大小 */
+}
+.swiper-slide {
+    background-position: center;
+	background-size: cover;
+	
+}
+.swiper-pagination-bullet{
+	margin: 0px 5px;
+}
+.swiper-pagination .swiper-pagination-bullet{
+	background: white;
+	opacity: 1;
+}
+.swiper-pagination{
+	bottom: 10px;
+    left: 45%;
+}
+.swiper1 .swiper-slide{
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+	background: #a79361;
+	box-shadow: 0 0 0 4px #dfcead;
+	border-radius: 500px;
+	border:none
+}
+.swiper-container .swiper-button-prev{
+    left: 154.5px;
+    width: 50px;
+    height: 50px;
+    background-color: #d0c4af;
+    border-radius: 50%;
+    opacity: 80;
+    
+}
+.swiper-container .swiper-button-next{
+    right: 154.5px;
+    width: 50px;
+    height: 50px;
+    background-color: #d0c4af;
+    border-radius: 50%;
+    opacity: 80;
+}
+.m-nav {
+    background: #fff;
+    height: 80px;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 0;
+}
+.m-nav .u-wrap {
+    position: relative;
+    font-size: 20px;
+    white-space: nowrap;
+    width: 1090px;
+    margin: 0 auto;
+}
+.m-nav .u-wrap .tlt {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    color: #B4A078;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-right: 28px;
+}
+.m-nav .u-wrap .iconList {
+    display: inline-block;
+    vertical-align: middle;
+    height: 60px;
+}
+.m-nav .u-wrap .iconList li {
+    display: inline-block;
+    height: 100%;
+    width: 264px;
+    border-left: 1px solid #eaeaea;
+}
+.m-nav .u-wrap .iconList li:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.m-nav .u-wrap .iconList li img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.m-nav .u-wrap .iconList li.icon2 span{
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* 主要产品 */
+.m-projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f4f4f4;
+}
+.m-project {
+    padding: 40px 0;
+}
+.m-project .m-productWrap {
+    width: 1090px;
+    margin: 0 auto;
+}
+.m-project .m-title {
+    position: relative;
+    width: 461px;
+    margin: 0 auto 10px;
+    height: 28px;
+    background: #f4f4f4;
+}
+.m-project .m-title .u-line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+ .m-project .m-title .u-line .cont {
+    position: absolute;
+    width: 221px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin: -17px 0 0 -110px;
+    font-size: 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+.m-project .m-title .u-line .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+.m-project .m-title .u-line .name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.m-project .m-itemList {
+    width: 100%;
+    overflow: hidden;
+}
+.m-itemList:after, .m-itemList:before {
+    content: " ";
+    display: table;
+}
+.m-project .m-item {
+    float: left;
+    margin-top: 20px;
+    width: 535px;
+    height: 220px;
+    background: #fff;
+    cursor: pointer;
+}
+ .m-project .m-item.even {
+    margin-left: 20px;
+}
+.m-project .m-focusItem {
+    overflow: hidden;
+}
+.m-project .m-focusItem .u-pic {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+}
+.m-project .m-info {
+    float: left;
+    padding-left: 15px;
+    width: 300px;
+}
+.m-project .m-info .u-name {
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.m-project .m-info .u-desc {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 6px;
+}
+.m-project .m-progress {
+    width: 300px;
+    background-color: transparent;
+    padding: 0;
+}
+.m-project .m-progressBar {
+    margin-top: 38px;
+}
+.m-project .m-progressBar .u-bar {
+    width: 220px;
+    height: 2px;
+    background-color: #F4F4F4;
+    border-radius: 2px;
+    position: relative;
+}
+.m-project .m-progressBar .u-bar .progress {
+    height: 2px;
+    background-color: #B4A078;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ .m-project .m-progress .u-percent {
+    position: absolute;
+    color: #B4A078;
+    font-size: 16px;
+    line-height: 16px;
+    top: -7px;
+    left: 226px;
+}
+ .m-project .m-detail-small {
+    margin-top: 37px;
+    overflow: hidden;
+}
+
+.m-project .m-detail-small li {
+    width: 95px;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.m-project .m-detail-small li:nth-child(3){
+    border-right: none;
+}
+.m-project .m-detail-small li .text {
+    line-height: 1;
+    font-size: 14px;
+    color: #333;
+}
+.m-project .m-detail-small li .desc {
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+    line-height: 1;
+}

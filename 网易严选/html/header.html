@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<script src="../js/swiper.min.js"></script>
+		<script src="../js/ajax.js"></script>
+	</head>
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+			overflow-x: hidden;
+		}
+		
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		
+		@media (max-width: 760px) {
+			.swiper-button-next {
+				right: 20px;
+				transform: rotate(90deg);
+			}
+			.swiper-button-prev {
+				left: 20px;
+				transform: rotate(90deg);
+			}
+		}
+	</style>
+
+	<body>
+		<div id="header">
+			<div class="header_top">
+				<div class="g-rows">
+					<div class="yhk">
+						<ul>
+							<li>
+								<a href="">
+									用银行卡在严选购物，最高随机直减99元
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- ======================== -->
+					<div class="qy">
+						<a href="" class="login" title="网易严选登陆">
+							登陆/注册
+						</a>
+						<div class="split"></div>
+						<a href="" class="attitude">
+							我的订单
+						</a>
+						<div class="split"></div>
+						<a href="" class="attitude">
+							会员
+						</a>
+						<div class="split"></div>
+						<a href="" class="attitude">
+							甄选家
+						</a>
+						<div class="split"></div>
+						<div class="qiye">
+							<span>
+                            企业采购
+                        </span>
+							<i></i>
+							<div class="yingcang">
+								<div class="ycnav">
+									<a href="" class="h">企业购</a>
+									<a href="">礼品卡</a>
+									<a href="">联系我们</a>
+								</div>
+							</div>
+						</div>
+						<div class="split"></div>
+						<div class="khfw">
+							<span>客户服务</span>
+							<i></i>
+							<div class="yingcang">
+								<div class="ycnav">
+									<a href="" class="h">帮助中心</a>
+									<a href="">商务合作</a>
+									<a href="">开放平台</a>
+								</div>
+							</div>
+						</div>
+						<div class="split"></div>
+						<div class="app">
+							<i></i>
+							<span>APP</span>
+							<div class="ap">
+								<div class="wrap">
+									<div></div>
+									<p class="text">下载领1000元新人礼包</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- =================================================== -->
+			<div class="txt">
+				<div class="t-row">
+					<a href="" class="logo"></a>
+					<div class="con">
+						<a href="" class="gwc">
+							<i class="che"></i>
+							<span class="gw">购物车</span>
+							<i class="sum">0</i>
+						</a>
+						<div class="search">
+							<div class="sea1">
+								<i class="ss"></i>
+								<input type="text">
+								<div class="nr">男/女 温暖船型后包居家拖鞋</div>
+							</div>
+							<div class="sea2">
+								<span>搜索</span>
+							</div>
+							<div class="sea3">
+								<div class="swiper-container" id="container3">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a href="">润肌水74折</a>
+											<a href="" class="act">回馈金卡充11得33</a>
+											<a href="">爆款 行李箱</a>
+											<a href="" style="border-right: 0;">绍兴黄酒58元</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="">日式香薰机 直减50</a>
+											<a href="">11.11预售盛典</a>
+											<a href="">便携饭盒</a>
+											<a href="">擦手巾</a>
+											<a href="" style="border-right: 0;">润肌水74折</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="">润肌水74折</a>
+											<a href="" class="act">回馈金卡充11得33</a>
+											<a href="">爆款 行李箱</a>
+											<a href="" style="border-right: 0;">绍兴黄酒58元</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu">
+						<ul class="uul">
+                           <!--<a href="Life.html"></a>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/header.js"></script>
+	<script>
+		var swiper3 = new Swiper('#container3', {
+			slidesPerView: "auto",
+			direction: getDirection1(),
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				stopOnLastSlide: false,
+				disableOnInteraction: true
+			},
+			on: {
+				resize: function() {
+					swiper3.changeDirection(getDirection1());
+				}
+			}
+		});
+
+		function getDirection1() {
+			var windowWidth = window.innerWidth;
+			var direction1 = window.innerWidth <= 760 ? 'horizontal' : 'vertical';
+
+			return direction1;
+		}
+	</script>
+
+</html>
